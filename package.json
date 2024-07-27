@@ -1,12 +1,14 @@
 {
-  "name": "eco-online-store",
+  "name": "gadget-online-store",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is my pet project of an online store selling various gadgets, where I practice improving my IT skills.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install:server": "cd server & npm i",
+    "install:client": "cd client & npm i"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "gadget-online-store, online-shop"
+  ],
+  "author": "Bogdanov D.",
   "license": "ISC"
 }
