@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is my pet project of an online store selling various gadgets, where I practice improving my IT skills.",
   "scripts": {
-    "install:server": "cd server & npm i",
-    "install:client": "cd client & npm i"
+    "install:server": "cd server && npm i",
+    "install:client": "cd client && npm i"
   },
   "keywords": [
     "gadget-online-store, online-shop"
