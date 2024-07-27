@@ -14,4 +14,4 @@ I implemented the design and many different technologies and features myself.
 
 Вдохновился вот этим <a href='https://www.youtube.com/watch?v=H2GCkRF9eko&list=WL&index=73&ab_channel=UlbiTV'>туторилом</a>
 
-Дизайн и многие разные технологий и фичи внедрял сам.
+Дизайн и многие разные технологии и фичи внедрял сам.
