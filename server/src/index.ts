@@ -1,9 +1,12 @@
 import Express from 'express'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export const app = Express()
 app.use(Express.json())
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 const start = () => {
     try {
         // listening port
