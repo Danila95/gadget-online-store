@@ -15,4 +15,4 @@ class deviceController {
 
 }
 
-export default new deviceController();
+export default new deviceController()

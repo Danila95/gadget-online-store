@@ -5,6 +5,7 @@ import sequelize from './db'
 // console.log(models)
 import cors from 'cors'
 import { router } from './routes'
+import errorHandler from './middleware/ErrorHandlingMiddleware'
 
 const PORT = process.env.PORT || 5000
 
@@ -12,6 +13,9 @@ export const app: Express = express()
 app.use(cors()) // передаем cors() в app
 app.use(express.json()) // включаем json для обработки json в express
 app.use('/api', router) // подключаемся к роутеру express
+
+// Обработка ошибок, последний Middleware
+app.use(errorHandler)
 
 app.get('/', async (req: Request, res: Response): Promise<Response> => {
     // res.status(200).json({ message: 'WORKING!' })

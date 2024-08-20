@@ -1,4 +1,5 @@
-import { Request, Response } from 'express';
+import {NextFunction, Request, Response} from 'express'
+import ApiError from '../error/ApiError'
 
 class UserController {
     async registration(req: Request, res: Response) {
@@ -10,8 +11,12 @@ class UserController {
     }
 
     // проверяем авторизован ли пользователь
-    async check(req: Request, res: Response) {
-        res.json('Test')
+    async check(req: Request, res: Response, next: NextFunction) {
+        const { id } = req.query
+        if (!id) {
+            return next(ApiError.badRequest('Не задан ID'))
+        }
+        res.json(id)
     }
 }
 
